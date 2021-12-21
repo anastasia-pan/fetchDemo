@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&family=Libre+Baskerville&family=M+PLUS+1+Code:wght@100;300&family=Mukta:wght@200&family=Open+Sans:wght@300;400&family=Orbitron:wght@500&family=Outfit:wght@200;300&family=Roboto+Slab:wght@300&family=Special+Elite&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +7,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
-  color: grey;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #F4F4ED;
+  color: #63A46C;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font: bolder;
+  
 }
 
 code {
@@ -16,9 +20,9 @@ code {
 }
 
 img {
-  max-width: 300px;
-  max-height: 150px;
-  opacity: 0.5;
+  max-width: 200px;
+  max-height: 200px;
+  opacity: 1;
 }
 
 body {
@@ -37,50 +41,192 @@ body {
 }
 
 #virus {
-  align-self: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .heading {
-  max-width: 380px;
+  max-width: 500px;
   align-self: center;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
 }
 
 
 
 #second {
-  max-width: 380px
+  max-width: 400px;
+  text-align: center;
+}
+
+.header  {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  align-content: center;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .askUser {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  max-width: 380px;
+  max-width: 500px;
+
+  align-self: center;
+
+
 }
 
+
+
+
 .askUser input {
-  max-height: 20px;
+  max-height: 15px;
   align-self: center;
+  max-width: 90px;
+  margin-left: 30px;
+  color: #63A46C;
+  font-weight: bold;
 }
 
 .askUser button {
   max-height: 20px;
   align-self: center;
-  background-color: black;
-  color: grey;
+  background-color: #63A46C;
+  color: white;
   border-radius: 10%;
-  margin-left: 5px;
+  margin-left: 10px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .data {
+  color: #63A46C;
   border: solid;
+  border-width: 1px;
   max-width: 380px;
   display: flex;
   padding: 10px;
+  font-size: 10px;
 
+}
+
+.current{
+  align-self: center;
 }
 
 h4 {
   font-size: 13px;
+}
+
+
+
+li{
+  list-style: none;
+}
+
+.compare, #currentSet{
+text-align: center;
+}
+
+#errorMessage{
+text-align: center;
+font-size: 15px;
+padding: 5px;
+border: solid;
+border-width: 1px ;
+}
+
+
+
+.displayAll {
+  display: flex;
+  flex-direction: row;
+  background-color: #F4F4ED;
+  max-width: 800px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-inline-start: 0;
+
+}
+
+
+.previousCountry{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 11;
+  flex: 0 0 33.333333%;
+  border: solid;
+  border-width: 1px;
+  padding: 5px;
+  padding-bottom: 10px;
+  margin: 10px;
+
+
+
+}
+/* .countrybox{
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  max-width: 300px;
+
+} */
+
+.countrybox > {
+  padding: 10px;
+}
+
+#remove{
+
+  background-color: #63A46C;
+  color: #F4F4ED;
+  outline: 0; 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  width:80%;
+  margin: 0 auto;
+  display: block;
+}
+
+p{
+  font-size: 15px;
+}
+
+.green{
+  background-color: #63A46C;
+  color: #F4F4ED;
+  padding: 5px;
+
+  margin: 5px;
+}
+.white{
+  background-color: #F4F4ED;
+  color: #63A46C;
+  padding: 5px;
+  margin: 5px;
+}
+
+@media only screen and (max-width: 400px) {
+
+
+
+  .heading{
+    max-width: 380px;
+
+  }
+
+  #second {
+    text-align: center;
+    max-width: 400px;
+  }
+  .askUser {
+
+    max-width: 380px;
+  
+  }
 }
