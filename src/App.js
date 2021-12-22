@@ -4,6 +4,7 @@ import virus from "./images/virus.jpg";
 import primary from "./images/primary.png"
 
 
+
 const App = () => {
   const [userInput, setUserInput] = useState("");
   const [country, setCountry] = useState("");
@@ -51,7 +52,6 @@ const App = () => {
       <div className="header">
        
       <img  id="virus" src={primary} alt="covid virus" height="100" width="100" style={{padding:"20px"}}/>
-
       <h1 className="heading">COVID-19 Watch</h1>
    
     
